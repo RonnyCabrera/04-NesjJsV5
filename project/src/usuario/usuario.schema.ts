@@ -5,7 +5,7 @@ export const USUARIO_SCHEMA = Joi
     .keys({
         nombre: Joi.string()
             .required()
-            .regex(/^[a-zA-Z]$/)
+            .regex(/^[a-zA-Z]{3,30}$/)
             .min(3)
             .max(30),
         edad: Joi.number()
@@ -15,7 +15,7 @@ export const USUARIO_SCHEMA = Joi
         apellido: Joi
             .string()
             .required()
-            .regex(/^[a-zA-Z]$/)
+            .regex(/^[a-zA-Z]{3,30}$/)
             .min(3)
             .max(30),
     });
