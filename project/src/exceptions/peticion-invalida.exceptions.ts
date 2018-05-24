@@ -7,6 +7,7 @@ export class PeticionInvalidaExceptions extends HttpException {
                  private _nivelError) {
         super(
             {
+                //Menssajes u Objetos
                 mensaje:_mensaje,
                 detalle:_detalle,
                 nivelError:_nivelError,
