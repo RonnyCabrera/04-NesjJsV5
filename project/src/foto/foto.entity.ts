@@ -14,5 +14,5 @@ export class FotoEntity {
         usuario => usuario.fotos
     )
 
-    usuario: UsuarioEntity;
+    usuarios: UsuarioEntity;
 }
